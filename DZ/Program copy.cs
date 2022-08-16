@@ -145,7 +145,7 @@ void Zadacha50()
     Console.Write("Введите № столбца массива: ");
     int column = Convert.ToInt32(Console.ReadLine()) - 1;
     Console.WriteLine();
-    if (row < (nums.GetLength(0) - 1) && column < (nums.GetLength(1) - 1))
+    if (row < nums.GetLength(0) && column < nums.GetLength(1))
     {
         Console.WriteLine($"В ячейке с адресом {row}: {column} лежит число {nums[row, column]}");
     }
